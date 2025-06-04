@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Anie</title>
+  <style>
+    body {
+      margin-top: 100px;
+      padding: 0;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+      color: white;
+zoom: 0.70;
+    }
+
+    .header-box {
+      width: 80%;
+      max-width: 1000px;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .poem-box {
+      width: 80%;
+      max-width: 1000px;
+    }
+
+    .poem {
+      font-size: 30px;
+      background: url('Anie.jfif') center/cover no-repeat;
+      color: transparent;
+     
+    }
+	
+	 button {
+	  margin-top 50px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #444;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+	
+	.highlight {
+      background-color: Blue; /* highlight effect */
+      color: black; /* optional: to improve contrast */
+    }
+  </style>
+  <head>
+  <button onclick="highlightText()">Read my poem :></button>
+</head>
+
+<body>
+  <div class="poem-box">
+    <div class="poem" id="poem">
+      In the quiet of your name, Anie, whispered not in noise but in breath, I find the softest places in my soul, the places I never knew were empty until you walked in and made them whole.
+      Before you, time moved like wind directionless, unseen. But then came your voice, gentle as sunrise, and suddenly the world had color again. Anie, you are not just a moment. You are the moment everything changed.
+      You came like spring to a heart that had forgotten warmth. Where walls stood like winter, you planted light, and even the coldest parts of me began to bloom.
+      When you smile, the sky listens. When you speak, even silence feels loved. And when you simply exist, the world becomes softer,a little less cruel, a little more like home.
+      You call out the best in me, not by asking, but by simply being. And suddenly I want to be more—braver, kinder, quieter, only so I can match the goodness you give so freely.
+      In your presence, I feel seen without explanation, understood without translation. The way you say my name—not rushed, not careless—makes me feel like I belong.
+      Anie, I’ve read stories of great love and wild fates, of souls that move mountains to reach each other. I used to think they were myths, just tales for dreamers. But then I looked at you,the way your eyes hold the horizon, the way your heart carries grace—and I believed.
+      I would walk through lifetimes just to find you once more. If stars scattered, if maps failed, if everything I knew disappeared—still, I would know the way to you.
+      And when the world grows loud, when days forget to be gentle, you remain,a calm in my storm, a lighthouse in all this sea.
+      Years may pass, seasons may turn, but nothing will age the love I hold for you. If time dares to steal our days, still I will carry your name like a prayer that never loses power.
+      Because Anie, you are not a chapter in my story. You are the pages. The ink. The hand that steadies the pen.
+      When all else fades—when memories blur and moments drift,I will remember the softness of saying your name aloud.
+      Anie. Like morning. Like mercy. Like something sacred that the world is lucky to hold.
+      And in the quiet of your name, I will always, always find home.
+
+      
+
+    </div>
+	
+  </div>
+  
+  
+  
+  
+  <script>
+  function highlightText() {
+    const poem = document.getElementById("poem");
+    poem.classList.toggle("highlight");
+
+    if (poem.classList.contains("highlight")) {
+      poem.style.webkitBackgroundClip = "initial";
+      poem.style.webkitTextFillColor = "initial";
+      poem.style.backgroundClip = "initial";
+      poem.style.color = "white"; 
+    } else {
+      poem.style.webkitTextFillColor = "transparent";
+      poem.style.color = "transparent";
+    }
+  }
+</script>
+</body>
+
+
+</html>
